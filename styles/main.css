@@ -1,0 +1,44 @@
+@font-face {font-family:'normal';src:url('../font/Vera-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face {font-family:'italic';src:url('../font/Vera-Italic-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face {font-family:'bold';src:url('../font/Vera-Bold-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face {font-family:'boldItalic';src:url('../font/Vera-Bold-Italic-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}body,button,input,select,textarea{font-family:normal}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:normal}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin-left:0;padding:0 0 0 40px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+::selection { background: #cd2031; color: #fff; text-shadow: none; }
+/* clearfix */
+.cf:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+.cf{display:inline-block;}
+* html .cf{height:1%;}.cf{display:block;}
+
+/* Base Styling */
+h1,h2,h3,h4,h5,h6{font-weight:normal;margin:0 0 0.5em 0;}
+h1{font-size:30px;}
+h2{font-size:14px;}
+h3{font-size:12px;}
+a{color:inherit;text-decoration:none;}
+p{margin:0 0 1em 0;}
+body{font:normal 12px 'normal';background:-webkit-linear-gradient(#e5e2d4 0%,#dad6c3 5%, #b1aa85 90%, #a09870 100%);}
+#w{width:100%;overflow:hidden;float:left;box-sizing:border-box;padding-left:160px;}
+#c{box-sizing:border-box;width:100%;padding:20px;overflow:hidden;font-size:12px;}
+#c > ol{width:100%;float:left;list-style:none;margin:0;padding:0;}
+/* End Base Styling */
+
+/* Header */
+header{height:60px;background:url('../images/bgSprite.png') repeat-x 0 0;overflow:hidden;}
+h1{background:url('../doIt_128.png') no-repeat 10px 2px;background-size:48px 48px;padding:19px 0 0 65px;height:31px;margin:0;float:left;color:#fff;text-shadow: 2px 2px 6px #333;margin-top:3px;}
+/* End Header */
+
+/* Projects List */
+nav{width:160px;float:left;margin-left:-100%;position:relative;border-right:1px solid #000;background:#f5f5f5;}
+nav ol{list-style:none;margin:0;padding:0;}
+h2{width:100%;box-sizing:border-box;background:-webkit-linear-gradient(#e5e2d4 0%,#dad6c3 5%, #b1aa85 90%, #a09870 100%);font-size:14px;padding:3px 10px;margin:0;cursor:pointer;border:1px solid #ccc;border-left:0;border-right:0;}
+nav li{padding:3px 10px;background:#efefef;cursor:pointer;height:14px;}
+nav li:nth-child(2n+1){background:#fff;}
+nav h3{display:table-cell;width:100%;}
+nav span{display:table-cell;width:50%;white-space:nowrap;text-align:right;font-size:10px;}
+nav div:last-child ol{border-bottom:1px solid #ccc;}
+/* End Projects List */
+
+/* Main Content List */
+#c > ol > li{background:-webkit-linear-gradient(#eaeaea 0%, #f7f7f7 100%);box-sizing:border-box;padding:10px 10px;margin-bottom:2px;border:1px solid #ccc;border-radius:5px;box-shadow:2px 2px 6px #666;}
+/* End Main Content List */

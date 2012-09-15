@@ -1,0 +1,21 @@
+{
+  "name": "Do It!",
+  "description": "ToDo lists and time tracking",
+  "manifest_version": 2,
+  "version": "0.1",
+  "background": {
+    "scripts": ["scripts/doItBgEvents.js"]
+  },
+  "app": {
+    "launch": {
+      "local_path": "main.html"
+    }
+  },
+  "permissions": [
+  	"experimental",
+  	"notifications",
+  	"contextMenus"
+  ],
+  "omnibox": { "keyword" : "_do" },
+  "icons": { "16": "images/doIt_16.png", "128": "images/doIt_128.png" }
+}
